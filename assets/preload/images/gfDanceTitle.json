@@ -1,12 +1,12 @@
 {
 	
-	"titlex":275,
-	"titley":200,
+	"titlex":-1950,
+	"titley":-1900,
 	"startx":100,
 	"starty":576,
-	"gfx":555512,
+	"gfx":212,
 	"gfy":0,
-	"backgroundSprite":"tstitle",
+	"backgroundSprite":"bg",
 	"bpm":102
 	
 	
