@@ -231,7 +231,7 @@ class PlayState extends MusicBeatState
 	public static var seenCutscene:Bool = false;
 	public static var deathCounter:Int = 0;
 
-	public var defaultCamZoom:Float = 1.05;
+	public var defaultCamZoom:Float = 0.8;
 
 	// how big to stretch the pixel art assets
 	public static var daPixelZoom:Float = 6;
@@ -344,7 +344,7 @@ class PlayState extends MusicBeatState
 		if(stageData == null) { //Stage couldn't be found, create a dummy stage for preventing a crash
 			stageData = {
 				directory: "",
-				defaultZoom: 0.9,
+				defaultZoom: 0.8,
 				isPixelStage: false,
 			
 				boyfriend: [770, 100],
@@ -1027,7 +1027,7 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('Lights_Turn_On'));
 					snapCamFollowToPos(400, -2050);
 					FlxG.camera.focusOn(camFollow);
-					FlxG.camera.zoom = 1.5;
+					FlxG.camera.zoom = 0.8;
 
 					new FlxTimer().start(0.8, function(tmr:FlxTimer)
 					{
