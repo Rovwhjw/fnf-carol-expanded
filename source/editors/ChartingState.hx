@@ -63,7 +63,8 @@ class ChartingState extends MusicBeatState
         'Ringbox Note',
         'Spike Note',
         'Static Note',
-        'Static P1 Note'
+        'Static P1 Note',
+        'Missle'
 	];
 	private var noteTypeIntMap:Map<Int, String> = new Map<Int, String>();
 	private var noteTypeMap:Map<String, Null<Int>> = new Map<String, Null<Int>>();
@@ -85,7 +86,12 @@ class ChartingState extends MusicBeatState
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['MoveArrow', "Value 1: Note (0-7)Value 2: x value, y value, rotation, opacity (0-1), duration"],
 		['TweenSpin', "BOTH VALUES ARE REQUIRED FOR THE EFFECTValue 1: How long to tween for (in seconds)Value 2: How big of a tween (in degrees) (360 for one spin, 720 for 2 spins)"],
-		['Drain', "Steals health everytime its  called, useful for Illusion, Hallucination, Crusify, etc.THE VALUE IS REQUIRED FOR THE EFFECT TO DO SOMETHINGValue 1 : How much health, half health is 1."]
+		['Drain', "Steals health everytime its  called, useful for Illusion, Hallucination, Crusify, etc.THE VALUE IS REQUIRED FOR THE EFFECT TO DO SOMETHINGValue 1 : How much health, half health is 1."],
+		[Cam Boom Speed', "Value 1: Speed\nValue 2: Intensity"],
+		[Flashes Camera', "Value 1: speed"],
+		[Object Play Animation', "Plays object animation Value 1: Object variable name/lua tag\nValue 2: animation name"],
+		[Play Sound', "Vlaue 1: Sound File Name (in the sounds/ folder)\nValue 2: Volume (0 - 1)"],
+		[Set Cam Zoom', "Sets Camera Zoom Value 1: Cam zoom\nValue 2: if blank, it will smoothly zoom regularly, otherwise it will do an instant zoom"],
 	];
 
 	var _file:FileReference;
