@@ -2,8 +2,8 @@ function onCreate()
 	if difficulty == 0 then
 		addLuaScript('taikoInput')
 	end
-	makeLuaSprite('bg','characters/zanta/bg',-52.6,86.65)
-	makeAnimatedLuaSprite('gate','characters/zanta/gate',1099.85,-3.7)
+	makeLuaSprite('bg','images/bg',-52.6,86.65)
+	makeAnimatedLuaSprite('gate','images/gate',1099.85,-3.7)
 	addAnimationByIndices('gate','close','gate','0',24)
 	addAnimationByIndices('gate','open','gate','1',24)
 	objectPlayAnimation('gate','close')
@@ -13,7 +13,7 @@ function onCreate()
 
 
 
-	makeAnimatedLuaSprite('santa','characters/zanta/Santa',1550.65,92.95)
+	makeAnimatedLuaSprite('santa','characters/Santa',1550.65,92.95)
 
 	addAnimationByPrefix('santa','idle','santa0',24,false)
 	addAnimationByPrefix('santa','alt','santa alt',24,false)
@@ -31,7 +31,7 @@ function onCreate()
 
 	addLuaSprite('gate',false)
 
-	makeAnimatedLuaSprite('tom','characters/zanta/Tom Assets',93.85,116.25)
+	makeAnimatedLuaSprite('tom','characters/Tom Assets',93.85,116.25)
 
 	addAnimationByPrefix('tom','idle','tom idle',24,false)
 	addAnimationByPrefix('tom','singLEFT','tom gun left',24,false)
@@ -47,7 +47,7 @@ function onCreate()
 
 
 
-	makeAnimatedLuaSprite('matt','characters/zanta/matt',-7,186)
+	makeAnimatedLuaSprite('matt','characters/matt',-7,186)
 	addAnimationByIndices('matt','idle','matt idle','0',24)
 	addAnimationByIndices('matt','hm','matt idle','1',24)
 	addLuaSprite('matt',true)
